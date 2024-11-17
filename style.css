@@ -1,0 +1,45 @@
+:root{
+    --main-bg-color:rgb(121, 98, 148);
+    --sub-bg-color:white;
+    --top-height:70px;
+    --main-transition: all 0.3s ease;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+.row-grid{
+    display: grid;
+    justify-content: space-between;
+}
+.admin .row-grid{
+    grid-template-columns: 20% 80%;
+}
+.admin-sidebar{
+    height: 100vh;
+    background-color: rgb(121, 98, 148);
+
+}
+.admin-content{
+    background-color: var(--sub-bg-color);
+}
+.admin-sidebar-content{
+    padding: 30px 0 0 30px;
+    color: whitesmoke;
+}
+.admin-sidebar-content ul li a i{
+    margin-right: 10px;
+}
+.admin-sidebar-content ul li:hover {
+    padding: 6px 0;
+    transition: var(--main-transition);
+}
+.admin-sidebar-content li:hover{
+    background-color: black;
+}
